@@ -8,54 +8,86 @@
     <title>Document</title>
     <script>
 
-        // text is referred to as string (of characters)
-        // alert("Hello World"); // This is a single line comment`
-
-        let greeting = 'Hello World'
-        let myName = 'John';
-        // backtick ` (usually to the left of the 1 key on your keyboard)
-        // allows strings be interpolated
-        //  alert('Hello world: This is ' + myName + 'calling');
-
-        // alert(`${greeting}: This is ${myName} calling`);
-
-        let age = 60;
-        let targetYear = 100;
-        let yearsRemaining = targetYear - age;
-        console.log(`I am ${age} years old. In ${yearsRemaining} I will be ${targetYear}`);
-
-        let dogYears = 5
-        let ratio = 7
-        let myDogYears = dogYears * ratio;
-        let message = `My dog is ${myDogYears} in dog years`;
-        console.log(message)
-
-
-        let CatYears = 6;
-        let CatRatio = 15;
-        let myCatYears = CatYears * CatRatio;
-        message = `My cat is ${myCatYears} Cat years` // notice previous declaration of let 
-        console.log(message)
-
-        // How many years in cat years is she ages 15 cat years for their FIRST year, and 4 years per year after (). Cat is 6 human years
-/*
-
-cat is 6 years
-15 + (5*4) = 35
-
-
-
-*/
-        let CatFirstYear = 15;
-        let CatOtherYear = 4;
-        let CatCurrentAge = 6;
-        let CatRealYears = CatFirstYear + ( (CatCurrentAge-1) * CatOtherYear )
-        message = `My cat is ${CatRealYears} in cat years`;
-        console.log(message)
+        //Range Anxiety!
+        // let DistanceTravelled = 150;
+        // let TargetDistance = 350;
+        // let DistanceToCover = TargetDistance - DistanceTravelled;
+        // console.log(`You have driven ${DistanceTravelled} km and you have ${DistanceToCover} km to go`);
 
 
 
 
+        function HumanYearsToDogYears(humanYears) {
+
+            let yearsRatio = 7;
+            let dogYears = humanYears * yearsRatio;
+            console.log(`The dog is ${dogYears} in dog years`)
+        }
+
+        function HumanYearsToCatYears(CatCurrentAge) {
+            let CatFirstYear = 15;
+            let CatOtherYear = 4;
+
+            let CatRealYears = CatFirstYear + ((CatCurrentAge - 1) * CatOtherYear)
+            message = `My cat is ${CatRealYears} Cat years`
+            console.log(message)
+
+        }
+
+
+
+        HumanYearsToDogYears(5);
+        HumanYearsToDogYears(6);
+        HumanYearsToDogYears(7);
+        HumanYearsToDogYears(8);
+        HumanYearsToDogYears(9);
+
+        HumanYearsToCatYears(5);
+        HumanYearsToCatYears(6);
+        HumanYearsToCatYears(7);
+        HumanYearsToCatYears(8);
+        HumanYearsToCatYears(9);
+
+        // Declare a function, give it a useful name, pass in parameters that change the output of the function
+        // function CalculateRange(DistanceTravelled, TargetDistance) {
+
+        //     console.log(`Calculating Range`);
+
+        //     let DistanceToCover = TargetDistance - DistanceTravelled;
+
+        //     console.log(`You have driven ${DistanceTravelled} km and you have ${DistanceToCover} km to go`);
+
+        // }
+
+        function CalculateRange(DistanceTravelled, TargetDistance) {
+
+            console.log(`Calculating Range for ${TargetDistance} with ${DistanceTravelled} travelled`);
+
+            let DistanceToCover = TargetDistance - DistanceTravelled;
+
+           // console.log(`You have driven ${DistanceTravelled} km and you have ${DistanceToCover} km to go`);
+
+           return DistanceToCover;
+
+        }
+
+        let DistanceToCover1 = 0;
+        let DistanceToCover2 = 0;
+        let DistanceToCover3 = 0;
+        let DistanceToCover4 = 0;
+
+        DistanceToCover1 = CalculateRange(100, 500);
+       
+        DistanceToCover2 = CalculateRange(50, 250);
+       
+        DistanceToCover3 = CalculateRange(23, 46);
+       
+        DistanceToCover4 = CalculateRange(56, 120);
+
+        console.log(`You have ${DistanceToCover1} km to go`);
+        console.log(`You have ${DistanceToCover2} km to go`);
+        console.log(`You have ${DistanceToCover3} km to go`);
+        console.log(`You have ${DistanceToCover4} km to go`);
 
 
 
