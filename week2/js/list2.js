@@ -25,7 +25,6 @@ function initDwarves() {
     return dwarves;
 }
 
-
 function listDwarves(dwarves) {
 
     for(let counter = 0; counter < dwarves.length; counter++) {
@@ -34,8 +33,6 @@ function listDwarves(dwarves) {
     }
 
 }
-
-
 
 function DisneyDwarves() {
 
@@ -62,3 +59,11 @@ function DisneyDwarves() {
 }
 
 DisneyDwarves()
+
+//Imagine you have full list of dwarves
+//And you have an a bus for EACH dwarf [GetBus(dwarf)]
+//and you have to call the bus for each dwarf to get them home
+// until there are no dwarves left to go home
+// show how many dwarves are left as each one leaves
+
+// Or to put it another way: while there dwarves left top pop off home, get them a bus
