@@ -15,6 +15,8 @@ function init() {
     
     htmlFragment = renderCitiesAsHTMLWithIndex(listOfCities)
     RenderHtmlContent(htmlFragment, "listGroup2")
+
+    RenderCitySelectList(listOfCities);
 }
 
 function RenderCitiesAsParagraphs(listOfCities) {
@@ -56,8 +58,8 @@ function renderCitiesAsHTMLWithIndex(listOfCities) {
 
     htmlContent.push('<ul class="list-group">')
 
-    listOfCities.forEach((city, index)=>{
-
+    listOfCities.forEach((city, index) => {
+ 
         htmlContent.push(`<li>${city}:${index}</li>`)
     })
 
