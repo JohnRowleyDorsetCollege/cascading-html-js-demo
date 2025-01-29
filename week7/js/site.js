@@ -40,7 +40,7 @@ function SetupPizzaOptions() {
 
     $('#selectVegOptions').on('click', function () {
 
-        // Only select checkboxes of class meatOption and set their checked status to value of the box that was clicked
+        // Only select checkboxes of class vegOption and set their checked status to value of the box that was clicked
         $('input:checkbox').not('.meatOption').not('#selectMeatOptions').not(this).prop('checked', this.checked);
 
         const numberOfCheckedItems = $('input:checkbox:checked').not(this).length;

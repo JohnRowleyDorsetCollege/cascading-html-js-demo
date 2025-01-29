@@ -1,13 +1,13 @@
 const adultPrice = 10;
-const childPrice = 5;
-const familyPrice = 30;
+const childPrice = 5; // child ticket must have at least 1 adult ticket
+const familyPrice = 30;  // 2 adults and 3 children
 
 let totalTicketPrice = 0;
 let adultTicketCount = 0;
 let childTicketCount = 0;
 
-const maxAdultTickets = 4;
-const maxChildTickets = 5;
+const maxAdultTickets = 4; // total number of adults allowed
+const maxChildTickets = 5; // total number of children allowed
 
 
 

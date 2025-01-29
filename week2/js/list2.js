@@ -65,7 +65,7 @@ DisneyDwarves()
 // and you have to call the bus for each dwarf to get them home
 // until there are no dwarves left to go home
 // show how many dwarves are left as each one leaves
-// Or to put it another way: while there dwarves left top pop off home, get them a bus
+// Or to put it another way: while there dwarves left to pop off home, get them a bus
 
 function SendDwarvesHome(dwarves) {
 
